@@ -17,6 +17,29 @@ class Dog : public Animal{      //inherits from animal
             cout << "I bark a lot!!";
         }
 };
+
+
+
+//multilevel inheritance
+class Animal{
+    public:
+        void eat(){
+            cout << "i can eat";
+        }
+};
+
+class Dog : public Animal{      //inherits from animal
+    public:
+        void bark(){
+            cout << "I bark a lot!!";
+        }
+};
+class Puppy: public Dog{
+    public:
+        void weep(){
+            cout << "I week cause i'm small";
+        }
+};
 */
 
 //multiple inheritance
@@ -46,3 +69,8 @@ int main(){
     check.drive();  //inherit from Drive    
     
 }
+
+
+//there are also hierarchical inheritance in which multiple drived class are drived from single base class
+
+
