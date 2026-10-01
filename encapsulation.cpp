@@ -15,7 +15,7 @@ class Bank{
             balance += amount;
         }
         else{
-            cout << "error!";
+            cout << "error!\n Try again!";
         }
 
     }
